@@ -1,7 +1,8 @@
-all: gen
+all: init
 	@python bacon.py "count of distinct cpt"
 	@echo "Usage: ./bacon.py 'your question'"
-gen:
+init:
 	@./gen-sqlite-from-mrf.sh
+	@pip install -r < requirements.txt
 clean:
 	@rm sample.db
