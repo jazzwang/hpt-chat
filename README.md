@@ -1,4 +1,23 @@
-# How to run
+## 0. REQUIREMENT
+
+### 0.1 OPENAI API KEY
+
+- get OPENAI_API_KEY from https://platform.openai.com/account/api-keys
+```
+~/git/shop-client-poc$ cp .env.sample .env
+```
+replace with your API key.
+```
+~/git/shop-client-poc$ echo "OPENAI_API_KEY=sk-......." > .env
+```
+
+### 0.2 LangChain package
+
+```
+~/git/shop-client-poc$ pip install -r requirements.txt
+```
+
+# 1. How to run
 
 ```bash
 ~/git/shop-client-poc$ make
@@ -7,10 +26,13 @@ or
 ```bash
 ~/git/shop-client-poc$ ./gen-sqlite-from-mrf.sh
 ~/git/shop-client-poc$ pip install -r requirements.txt
+~/git/shop-client-poc$ ./bacon.py "YOUR QUESTION"
 ```
-* NOTE: tested success with Python 3.11. fail with Python 3.8
+* NOTE: tested success with Python 3.11. test fail with Python 3.8
 
-```
+## 2. Examples
+
+```bash
 gitpod /workspace/gitpod-labs/shop-chat-poc (master) $ make
 --2023-06-29 04:28:31--  https://assets.changehealthcare.com/Shop/PROD/static/BaconCountyHospital/ein_BaconCountyHospital_standardcharges.csv.zip
 Resolving assets.changehealthcare.com (assets.changehealthcare.com)... 45.60.195.19
