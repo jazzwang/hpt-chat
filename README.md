@@ -41,12 +41,12 @@ HTTP request sent, awaiting response... 200 OK
 Length: 536516 (524K) [application/zip]
 Saving to: ‘ein_BaconCountyHospital_standardcharges.csv.zip’
 
-ein_BaconCountyHospital_standardcharges.csv 100%[===========================================================================================>] 523.94K   307KB/s    in 1.7s    
+ein_BaconCountyHospital_standardcharges.csv 100%[===========================================================================================>] 523.94K   307KB/s    in 1.7s
 
 2023-06-29 04:28:33 (307 KB/s) - ‘ein_BaconCountyHospital_standardcharges.csv.zip’ saved [536516/536516]
 
 Archive:  ein_BaconCountyHospital_standardcharges.csv.zip
-  inflating: 58-2224545_BaconCountyHospital_standardcharges.csv  
+  inflating: 58-2224545_BaconCountyHospital_standardcharges.csv
 CREATE TABLE IF NOT EXISTS "MRF"(
   "PRIMARY_PROCEDURE_DESCRIPTION" TEXT,
   "SETTING_TYPE" TEXT,
@@ -128,7 +128,7 @@ SQLQuery:SELECT "PRIMARY_PROCEDURE_DESCRIPTION", "GROSS_PRICE", "CASH_PRICE", "N
 SQLResult: [('IRON', '76.00', '76.00', '24.32'), ('IRON', '76.00', '76.00', '25.60'), ('IRON', '76.00', '76.00', '55.28'), ('IRON', '76.00', '76.00', '21.28'), ('IRON', '76.00', '76.00', '60.42')]
 Answer:The price of IRON related procedures ranges from 21.28 to 60.42.
 > Finished chain.
-gitpod /workspace/gitpod-labs/shop-chat-poc (master) $ 
+gitpod /workspace/gitpod-labs/shop-chat-poc (master) $
 gitpod /workspace/gitpod-labs/shop-chat-poc (master) $ ./bacon.py "list columns of database"
 
 
@@ -147,4 +147,7 @@ SQLQuery:SELECT name FROM sqlite_master WHERE type='table';
 SQLResult: [('MRF',)]
 Answer:The name of the database is MRF.
 > Finished chain.
+```
+```
+
 ```
