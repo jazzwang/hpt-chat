@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-## Reference: 
+## Reference:
 ## [1] https://github.com/brunogarcia/langchain-titanic-sqlite
 ## [2] https://github.com/kemperd/langchain-sqlchain/blob/main/langchain-sqlchain.ipynb
 

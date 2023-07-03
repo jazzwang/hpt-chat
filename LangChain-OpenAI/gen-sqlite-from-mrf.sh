@@ -7,4 +7,4 @@ rm *.zip
 # remove top 3 lines
 grep '","' 58-2224545_BaconCountyHospital_standardcharges.csv > sample.csv
 sqlite3 sample.db < import.sql
-rm *.csv
+#rm *.csv
