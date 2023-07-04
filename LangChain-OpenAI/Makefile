@@ -4,7 +4,7 @@ all: init
 init:
 	@./gen-sqlite-from-mrf.sh
 	@pip install -r requirements.txt
-clean:
+clean: sample.db
 	@rm sample.db
 test:
 	@python bacon.py "count of primary precedures"
