@@ -9,4 +9,7 @@ clean:
 test:
 	@python bacon.py "count of primary precedures"
 	@python bacon.py "price of IRON related precedures"
-
+sample:
+	@chainlit run chainlit_sample.py -w
+run:
+	@chainlit run hpt-chat.py -w
