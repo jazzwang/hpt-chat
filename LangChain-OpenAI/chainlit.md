@@ -35,14 +35,24 @@ My father took multiple procedures including X-RAY related and IRON related. He 
 
 (this one sometimes fails)
 
-5. ask complex question in bullet points
+5. ask complex questions in bullet points
 
 ```
-total negotiate price of 3 procedures:
+get the negotiated price of 3 procedures first and then give me the total amount:
 
-- X-RAY related
-- IRON related
-- BED related
+- negotiated price of X-RAY related procedure
+- negotiated price of IRON related procedure
+- negotiated price of BED related procedure
+
+Payer: Aetna
+```
+
+6. ask complex questions using formula
+
+```
+SUM(
+  negotiated price of X-RAY related procedure,negotiated price of IRON related procedure,negotiated price of BED related procedure
+)
 
 Payer: Aetna
 ```
