@@ -1,14 +1,36 @@
-# Welcome to Chainlit! 🚀🤖
+# Welcome to Bacon Country Hospital! 🚀🤖
 
-Hi there, Developer! 👋 We're excited to have you on board. Chainlit is a powerful tool designed to help you prototype, debug and share applications built on top of LLMs.
+This is a POC Chatbot application based on the Machine Readable File (MRF) of Bacon Country Hospital.
+The MRF file could be found from [here](https://assets.changehealthcare.com/Shop/PROD/static/BaconCountyHospital/ein_BaconCountyHospital_standardcharges.csv.zip).
 
-## Useful Links 🔗
+## Sample questions
 
-- **Documentation:** Get started with our comprehensive [Chainlit Documentation](https://docs.chainlit.io) 📚
-- **Discord Community:** Join our friendly [Chainlit Discord](https://discord.gg/ZThrUxbAYw) to ask questions, share your projects, and connect with other developers! 💬
+1. ask the average price with a fuzzy procedure name
+```
+What is the average price of IRON related procedure?
+```
+2. ask negotiated price with a fuzzy procedure name
+```
+What is the negotiated price of IRON related procedure?
+```
+3. ask with simple syntax like
+```
+price range: X-RAY related procedure
+payer: Aetna
+```
+NOTE: `related procedure` is required for get the right SQL query using `LIKE '%X-RAY%'`
+4. ask complex question
+```
+My father took multiple procedures including X-RAY related and IRON related. He needs a BED related procedure for 7 days. What is the total negotiated price for those 3 procedures? Payer is Aetna.
+```
+(this one sometimes fails)
+5. ask complex question in bullet points
+```
+total negotiate price of 3 procedures:
 
-We can't wait to see what you create with Chainlit! Happy coding! 💻😊
+- X-RAY related
+- IRON related
+- BED related
 
-## Welcome screen
-
-To modify the welcome screen, edit the `chainlit.md` file at the root of your project. If you do not want a welcome screen, just leave this file empty.
+Payer: Aetna
+```
