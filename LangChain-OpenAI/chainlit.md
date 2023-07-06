@@ -18,7 +18,7 @@ What is the average price of IRON related procedure?
 What is the negotiated price of IRON related procedure?
 ```
 
-3. ask a question with simple syntax _**in <mark>Spanish</mark>**_
+3. ask a question with simple syntax _**in Spanish**_
 
 ```
 Por favor, proporciona el rango de precios de los procedimientos relacionados con RAYOS X.
