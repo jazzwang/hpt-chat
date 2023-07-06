@@ -18,7 +18,14 @@ What is the average price of IRON related procedure?
 What is the negotiated price of IRON related procedure?
 ```
 
-3. ask with simple syntax like
+3. ask a question with simple syntax _**in <mark>Spanish</mark>**_
+
+```
+Por favor, proporciona el rango de precios de los procedimientos relacionados con RAYOS X.
+Aseguradora: Aetna
+```
+
+4. ask with simple syntax like
 
 ```
 price range: X-RAY related procedure
@@ -27,7 +34,7 @@ payer: Aetna
 
 NOTE: `related procedure` is required for get the right SQL query using `LIKE '%X-RAY%'`
 
-4. ask complex question
+5. ask complex question
 
 ```
 My father took multiple procedures including X-RAY related and IRON related. He needs a BED related procedure for 7 days. What is the total negotiated price for those 3 procedures? Payer is Aetna.
@@ -35,7 +42,7 @@ My father took multiple procedures including X-RAY related and IRON related. He 
 
 (this one sometimes fails)
 
-5. ask complex questions in bullet points
+6. ask complex questions in bullet points
 
 ```
 get the negotiated price of 3 procedures first and then give me the total amount:
@@ -47,7 +54,7 @@ get the negotiated price of 3 procedures first and then give me the total amount
 Payer: Aetna
 ```
 
-6. ask complex questions using formula
+7. ask complex questions using a formula
 
 ```
 SUM(
